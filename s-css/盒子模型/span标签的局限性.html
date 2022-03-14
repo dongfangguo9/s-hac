@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* h3 div 通栏 独占一行的  text-align: center; 可以让 这些通栏的盒子里面的 文字 图片 表单等等水平居中 
+            span标签没有不是通栏的，所以使用text-align不会让它的文字居中，因为span盒子都没有居中
+            同样因为span不是通栏，设置宽高也是不起作用的
+        */
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            text-align: center;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 大盒子里面的 text-align 让盒子里面的文字 等小盒子水平居中 */
+            text-align: center;
+            /* 我想要盒子水平居中 */
+            margin: 0 auto;
+        }
+
+        /* 练习： 让一个 300 * 400 粉红盒子 浏览器水平居中， 里面的文字 也水平居中 */
+    </style>
+</head>
+
+<body>
+    <span>111</span>
+    <div>123</div>
+</body>
+
+</html>

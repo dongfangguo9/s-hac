@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+
+            width: 500px;
+            /* 如果父元素没有高度，此刻由于浮动是脱标的，脱标是不占位置的，那么下面的盒子就会和上面的盒子重合，此刻需要清除浮动
+                低端解决方法：
+                1.直接给出方法，简单粗暴，但是比较僵硬
+                2.使用一个块元素，元素内添加标签，clear:both。相当于加一个撑开的盒子。就是本例， 如果注释掉最后一块，就会打回原型
+            */
+            background-color: pink;
+            /* 让孩子撑开 */
+        }
+
+        /* 不是每个父亲都给高度的 */
+        .footer {
+            width: 600px;
+            height: 300px;
+            background-color: black;
+        }
+
+        .box1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        .box2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        .clear {
+            /* 清除浮动 */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box1">大毛</div>
+        <div class="box2">二毛</div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">底部盒子</div>
+</body>
+
+</html>

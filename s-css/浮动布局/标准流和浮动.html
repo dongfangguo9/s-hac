@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 标准流是一种排版规则：
+        1.块级元素：从上到下，垂直布局，独占一行
+        2.行内元素或块级元素：从左向右，水平布局
+        标准流布局比较单一，我们采用浮动，让多个块级元素可以在同一行
+     -->
+     <!-- 浮动的特点
+        1.浮动会脱离标准流，简称脱标，脱标的位置被其他标准流占有
+        2.浮动找浮动，下一个浮动会在上一个浮动元素左右浮动
+        注意点：
+        1.标准流负责外部大盒子，内部小元素用浮动
+     -->
+    <style>
+        
+        .long {
+            /* 左浮动 */
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .caihong {
+            /* 右浮动 */
+            float: right;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="long">龙</div>
+    <div class="caihong">彩虹</div>
+</body>
+
+</html>

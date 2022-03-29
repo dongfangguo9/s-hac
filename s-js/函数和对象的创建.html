@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//很少通过构造函数的方式来声明变量，一般都是通过字面量来声明变量
+			var obj = new Object();
+			/*
+			 * 使用对象字面量来创建一个对象
+			 */
+			 var obj1 = {};
+			
+			 
+			 
+			 // 函数是一个特殊的对象，很少使用构造函数来声明变量
+			 // 函数创建的两种形式：函数声明和函数表达式
+			 /*
+			 * 使用 函数声明 来创建一个函数
+			 * 	语法：
+			 * 		function 函数名([形参1,形参2...形参N]){
+			 * 			语句...
+			 * 		}
+			 */
+			function fun2(){
+				console.log("这是我的第二个函数~~~");
+				alert("哈哈哈哈哈");
+				document.write("~~~~(>_<)~~~~");
+			}
+			
+			/*
+			 * 使用 函数表达式 来创建一个函数
+			 * var 函数名  = function([形参1,形参2...形参N]){
+			 * 	 语句....
+			 *  }
+			 */
+			var fun3 = function(){
+				console.log("我是匿名函数中封装的代码");
+			};
+			
+			
+			fun3();
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

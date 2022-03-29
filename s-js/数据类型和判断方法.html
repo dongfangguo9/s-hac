@@ -14,9 +14,14 @@
     * undefined: undefined
     * null: null
   * 对象(引用)类型
-    * Object: 任意对象
-    * Function: 一种特别的对象(可以执行)
-    * Array: 一种特别的对象(数值下标, 内部数据是有序的)
+    * Object: 任意对象 Function和array都是一种特殊的对象
+      * Function: 一种特别的对象(可以执行)
+      * Array: 一种特别的对象(数值下标, 内部数据是有序的)
+    /*
+    * 所有的对象都是Object的后代，
+    * 	所以任何对象和Object左instanceof检查时都会返回true
+    */
+
 2. 判断
   * typeof:
     * 可以判断: undefined/ 数值 / 字符串 / 布尔值 / function
@@ -25,6 +30,7 @@
     * 判断对象的具体类型
   * ===
     * 可以判断: undefined, null
+
 -->
 
 <script type="text/javascript">

@@ -1,6 +1,6 @@
-/s-other/webpack/dev-run/*
 
 # local env files
+/s-other/webpack/dev-run/*
 .env.local
 .env.*.local
 

@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* ctrl+f5 强制刷新 */
+
+        /*外边距是指当前盒子和其他盒子之间的距离，他只会影响盒子的位置，不会影响盒子的大小
+
+        margin 还可以设置为auto ,auto一般给水平方向的margin,如果只指定左或者右则会将外边距设置为最大值。垂直方向的auto是0
+        如果左右同时auto,那么左右就等距。
+
+        因此  margin: 0 auto   会将子元素水平居中，就是这个道理。另外这是简写，详情查api
+        */
         .box {
             width: 200px;
             height: 200px;

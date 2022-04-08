@@ -38,11 +38,8 @@
 			var mc = new MyClass();
 			
 			var mc2 = new MyClass();
-			
-			//console.log(MyClass.prototype);
-			//console.log(mc2.__proto__ == MyClass.prototype);
-			
-			//向mc中添加a属性
+
+			//向mc中添加a属性，这里添加的属性只会添加到mc中，访问mc.a，它会先在对象自身中寻找，如果有则直接使用，
 			mc.a = "我是mc中的a";
 			
 			//console.log(mc2.a);
